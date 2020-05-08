@@ -1,0 +1,143 @@
+body{background-image: url("https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_1280.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.title {
+  text-align: center;
+  color: red;
+  font-family: 'Bungee Outline', cursive;
+  font-weight: bolder;
+  background-color: rgba(30%, 24%, 44%, 0.5)
+}
+
+.robot{
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 2%;
+  width: 1200px;
+  height: 900px;
+  background: none;
+}
+
+.head{
+  position: absolute;
+  top: 5%;
+  left: 39%;
+  width: 22%;
+  height: 27%;
+  background: #756797;
+  border-radius: 20%;
+  border-top: solid;
+  border-color: white;
+}
+
+.mouth {
+   position: absolute;
+  top: 55%;
+  left: 25%;
+  width: 55%;
+  height: 20%; 
+  text-align: center;
+  font-family: 'Bungee Outline', cursive;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+ background-color: black;
+
+
+
+}
+
+
+
+#questionArea{
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  width: 70%;
+  height: 36%;
+  background:#c2bcd0; 
+  border-radius: 20%;
+  text-align: center;
+  font-family: 'Bungee Outline', cursive;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+
+#button
+{
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  width: 50%;
+  height: 20%;
+  background: black; 
+  border-radius: 20%;
+  font-family: "Bungee Outline", cursive;
+  font-size: 25px;
+  color: white;
+}
+
+#answer{
+ position: absolute;
+ top: 12%;
+ left: 15%;
+ width: 70%;
+ height: 30%;
+ background: black; 
+ text-align: center;
+ border-color: red;
+ color: red;
+ font-size: 25px;
+ font-family: 'Bungee Outline', cursive;
+ font-weight: bolder;
+}
+
+.neck{
+  position: absolute;
+  top: 32%;
+  left: 47.5%;
+  width: 5%;
+  height: 6%;
+  background: #55447C; 
+  border-radius: 20%;
+}
+
+.upper-body{
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  width: 30%;
+  height: 36%;
+  background: #55447C; 
+  border-radius: 2%;
+}
+
+
+.upper-body:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
